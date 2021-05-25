@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: 'https://studier-s.herokuapp.com',
+  baseURL: 'https://studier-s.herokuapp.com/api',
 })
 
 export const insertTask = task => api.post(`/task/task`, task)
