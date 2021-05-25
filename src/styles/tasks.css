@@ -1,0 +1,33 @@
+.genreCol {
+  width: 20%;
+  vertical-align: top;
+  padding: 0 1.5rem 0 0;
+}
+.tasksCol {
+  width: 70%;
+  height: 25rem;
+  vertical-align: top;
+}
+
+.layoutTable {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.top-btn-group {
+  width: 100%;
+  margin-bottom: 0.6rem;
+}
+
+.add-task-btn, .edit-genre-btn {
+  font-size: 0.9rem;
+}
+
+.add-genre-btn {
+  margin-top: 0.6rem;
+  width: 100%;
+}
+
+.addMvPlus {
+  margin-right: 0.2rem;
+}

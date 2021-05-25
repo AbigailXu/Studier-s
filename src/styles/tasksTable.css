@@ -1,0 +1,44 @@
+.titleCol {
+  max-width: 40%;
+  cursor: pointer;
+}
+
+.genreCol {
+  width: 15%;
+  cursor: pointer;
+}
+
+.dueCol {
+  width: 14%;
+  cursor: pointer;
+}
+
+.rateCol {
+  width: 14%;
+  cursor: pointer;
+}
+
+.deleteCol {
+  width: 12%;
+}
+
+.likeCol {
+  width: 5%;
+}
+
+.fa-sort{
+    opacity: 0.3;
+}
+
+.taskTitle{
+  color: #DC3545;
+}
+
+.taskTitle:hover{
+  color: black;
+  text-decoration: none;
+}
+
+.taskTableInfo{
+  vertical-align: middle !important;
+}
