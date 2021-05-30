@@ -1,6 +1,6 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Container } from 'react-bootstrap';
+//import { Link, NavLink } from "react-router-dom";
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import "../styles/navbar.css";
 
 const NavBar = () => {
@@ -18,46 +18,6 @@ const NavBar = () => {
     </Navbar.Collapse>
   </Container>
 </Navbar>
-    //     <div className="collapse navbar-collapse" id="navbarLeft">
-    //       <div className="navbar-nav ms-2 d-flex">
-    //         <NavLink className="nav-link" to="/tasks/main">
-    //           Tasks
-    //         </NavLink>
-    //         <NavLink className="nav-link" to="/cites">
-    //           Cites
-    //         </NavLink>
-    //         <NavLink className="nav-link" to="/music">
-    //           Music
-    //         </NavLink>
-    //       </div>
-    //     </div>
-    //     <div
-    //       className="collapse navbar-collapse justify-content-end"
-    //       id="navbarRight"
-    //     >
-    //       <div className="navbar-nav ms-2 d-flex">
-    //         <NavLink
-    //           className="nav-link login"
-    //           to="/login"
-    //           data-bs-toggle="tooltip"
-    //           data-bs-placement="bottom"
-    //           title="Login"
-    //         >
-    //           <i className="fa fa-sign-in"></i>
-    //         </NavLink>
-    //         <NavLink
-    //           className="nav-link register"
-    //           to="/register"
-    //           data-bs-toggle="tooltip"
-    //           data-bs-placement="bottom"
-    //           title="Register"
-    //         >
-    //           <i className="fa fa-user-plus"></i>
-    //         </NavLink>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </nav>
   );
 };
 
