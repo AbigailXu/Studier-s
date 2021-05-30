@@ -20,7 +20,7 @@ class EditTask extends Form {
 
   doSubmit = () => {
     const { title, genre, due, priority } = this.state.data;
-    const {onReturn} = this.props;
+    const {onReturn,id} = this.props;
     const curDate = new Date();
     const dueDate = (due===0 ? curDate.getTime() : due.getTime()) 
     const newTask = {
@@ -32,13 +32,13 @@ class EditTask extends Form {
       checked: false,
     };
     //console.log(dueDate);
-    apiTask.insertTask(newTask);
+    if(id) apiTask.updateTaskById(id,newTask);
+    else apiTask.insertTask(newTask);
     onReturn("/tasks/main");
   };
 
   render() {
     const { allGenres } = this.props;
-    console.log(allGenres);
 
     const options = [];
     allGenres.map((genre) => {
@@ -53,18 +53,21 @@ class EditTask extends Form {
       { value: "3", label: "Low (3)", topic: "priority" },
     ];
 
+    const {id} = this.props;
+    const addOrEdit = id ? "Edit" : "Add"
+
     return (
       <Fragment>
         {/* {console.log(this.state.data)} */}
         <form onSubmit={this.handleSubmit} className="form-mov">
-          <h1> Add Task</h1>
+          <h1> {addOrEdit} Task</h1>
           {this.renderInput("title", "Title")}
           {this.renderDropdown("genre", "Genre", options)}
           {/* renderDropdown(name, lable, options) */}
           {/* {this.renderInput("due", "Due date")} */}
           {this.renderDatepicker("due", "Due date")}
           {this.renderDropdown("priority", "Priority", priorities)}
-          {this.renderSubmitBtn("Add Movie")}
+          {this.renderSubmitBtn(`${addOrEdit} Movie`)}
         </form>
       </Fragment>
       //renderInput(name, lable, placeholder, isAutoFocus=false, type="text")
