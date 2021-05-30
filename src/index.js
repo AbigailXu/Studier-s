@@ -18,7 +18,6 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 library.add(far, fas);
 
-
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>

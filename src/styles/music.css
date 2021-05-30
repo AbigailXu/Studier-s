@@ -1,0 +1,19 @@
+.music-card-text{
+    font-size: 0.8rem !important;
+    color: rgb(155, 155, 155);
+}
+
+.play-btn:hover{
+    color: #DC3545;
+}
+
+.info-circle{
+    /* font-size: 0.8rem ; */
+    color: rgb(155, 155, 155);
+    opacity: 0.7;
+    vertical-align: middle;
+}
+
+.info-circle:hover{
+    opacity: 1;
+}

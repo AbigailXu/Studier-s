@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Bgm from "../audio/bgm"
+//AIzaSyAI8fqxPps4wDvPS5w1gV_YuBBRwH1mEwY
 
 class Music extends Component {
   state = {};
@@ -6,7 +8,7 @@ class Music extends Component {
     return (
       <div>
         <h1>Music</h1>
-        <p>Comming soon...</p>
+        <Bgm/>
       </div>
     );
   }
