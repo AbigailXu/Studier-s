@@ -19,12 +19,7 @@ class Bgm extends Component {
             title="Happy Lofi"
             text="YouTube. (2021). Happy Lofi. YouTube. https://www.youtube.com/watch?v=uHFxYL3WtBs&amp;list=PLr8Sd_4ImWaYLmtSsjBpzJuNshTNuQwGs&amp;index=1. "
           />
-          <MusicCard
-            music={happy_lofi}
-            image={ChillHopMusic_LofiHipHop}
-            title="Happy Lofi"
-            text="YouTube. (2021). Happy Lofi. YouTube. https://www.youtube.com/watch?v=uHFxYL3WtBs&amp;list=PLr8Sd_4ImWaYLmtSsjBpzJuNshTNuQwGs&amp;index=1. "
-          />
+          
         </div>
       </div>
     );
