@@ -3,6 +3,7 @@ import EditTask from "../components/editTask";
 import { apiTask, apiGenre } from "../api/index.js";
 
 import "../styles/tasks.css";
+import "../styles/common.css";
 import DisplayTasks from "../components/tasksPage";
 
 class Products extends Component {
@@ -101,28 +102,30 @@ class Products extends Component {
 
     if (status === "main") {
       return (
-        <DisplayTasks
-          allGenre={genres}
-          handleAddTask={this.handleAddTask}
-          handleAddGenre={this.handleAddGenre}
-          handleDeleteGenre={this.handleDeleteGenre}
-          onGenre={this.handleGenreChange}
-          onSearch={this.handleSearch}
-          onDelete={this.handleDeleteTask}
-          onCheck={this.handleCheck}
-          onPageChange={this.handlePageChange}
-          onSort={this.handleSort}
-          data={curPageTasks}
-          count={curGenreTasks.length}
-          pageSize={pageSize}
-          currentPage={currentPage}
-          currentSort={currentSort}
-          currentGenre={currentGenre}
-        />
+        <div className="contents">
+          <DisplayTasks
+            allGenre={genres}
+            handleAddTask={this.handleAddTask}
+            handleAddGenre={this.handleAddGenre}
+            handleDeleteGenre={this.handleDeleteGenre}
+            onGenre={this.handleGenreChange}
+            onSearch={this.handleSearch}
+            onDelete={this.handleDeleteTask}
+            onCheck={this.handleCheck}
+            onPageChange={this.handlePageChange}
+            onSort={this.handleSort}
+            data={curPageTasks}
+            count={curGenreTasks.length}
+            pageSize={pageSize}
+            currentPage={currentPage}
+            currentSort={currentSort}
+            currentGenre={currentGenre}
+          />
+        </div>
       );
     } else if (status === "edit") {
       return (
-        <div>
+        <div className="contents">
           <EditTask
             id={id}
             allGenres={this.state.genres}
@@ -153,7 +156,7 @@ class Products extends Component {
     });
     curGenreTasks.map((t) => apiTask.deleteTaskById(t._id));
     apiGenre.deleteGenreById(genre._id);
-    this.setState({currentGenre:""});
+    this.setState({ currentGenre: "" });
     this.syncTasks();
     this.syncGenre();
     window.location.reload();

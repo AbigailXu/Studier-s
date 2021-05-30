@@ -20,7 +20,7 @@ class App extends Component {
     return (
       <Fragment>
         <NavBar />
-        <div className="contents">
+        <div className="">
           <Switch>
             {/* <Route path="/movies/:id" component={MovieDetail}/> */}
             {/* <Redirect from="/home" to="/movies" /> */}

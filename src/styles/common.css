@@ -40,3 +40,24 @@
     padding: 0;
     width:5% !important;
 }
+
+.bg{
+    position: absolute;
+    width: 100%;
+
+}
+
+.area3{
+    position: relative;
+    margin-top: 38.6%;
+    margin-left: 15.7%;
+    width: 14.7%;
+    opacity: 0;
+}
+.area3:hover{
+    cursor: pointer;
+}
+
+.contents{
+    padding: 0.5rem 2.5rem !important;
+}

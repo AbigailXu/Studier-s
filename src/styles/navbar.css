@@ -26,3 +26,7 @@
 .login:hover,.register:hover{
     opacity: 0.9 !important;
 }
+
+.main-nav{
+    background-color:#675642 !important;
+}

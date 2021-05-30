@@ -6,7 +6,7 @@ class Music extends Component {
   state = {};
   render() {
     return (
-      <div>
+      <div className="contents">
         <h1>Music</h1>
         <Bgm/>
       </div>

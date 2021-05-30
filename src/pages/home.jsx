@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import UnderConstruction from "../images/page_under_construction.png";
+import BG1 from "../images/background1.png";
+import area3 from "../images/3.png";
+import "../styles/common.css"
 
 class Home extends Component {
   state = {};
@@ -7,9 +9,15 @@ class Home extends Component {
     return (
       <div>
         <img
-          className="page-under-construction"
-          src={UnderConstruction}
-          alt="page under construction"
+          className="bg"
+          src={BG1}
+          alt="background"
+        />
+        <img
+          onClick={()=>window.open("https://github.com/AbigailXu/Studier-s")}
+          className="area3"
+          src={area3}
+          alt="background"
         />
       </div>
     );
