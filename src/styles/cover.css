@@ -1,0 +1,45 @@
+.cover-container{
+    padding: 0 !important;
+} 
+
+.cover-s1{
+    padding: 25% 0 35% 0;
+    position: relative; 
+    height: 10rem;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.cover-s2{
+    background-color: #A8A294;
+    color: aliceblue;
+    position: relative; 
+    height: 10rem;
+    vertical-align: middle;
+    padding:  20% 0 40% 0;
+    text-align: center;
+}
+
+.cover-s2>h4,h1{
+    line-height: 200% !important;
+}
+
+.cover-s3{
+    position: relative; 
+    height: 10rem;
+    vertical-align: middle;
+    padding:  25% 0 35% 0;
+    margin:0;
+    text-align: center;
+}
+
+.cover-footer{
+    background-color: #686358;
+    color: aliceblue;
+    position: relative; 
+    height: 2rem;
+    vertical-align: middle;
+    padding:  2% 0 5% 0;
+    margin:0;
+    text-align: center;
+}

@@ -6,8 +6,8 @@ import "../styles/navbar.css";
 const NavBar = () => {
   return (
     <Navbar className="main-nav" bg="light" expand="lg">
-  <Container>
-    <Navbar.Brand href="/">Studier's</Navbar.Brand>
+  <Container className="nav-container">
+    <Navbar.Brand className="nav-name" href="/">Studier's</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">

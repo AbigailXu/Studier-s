@@ -29,4 +29,13 @@
 
 .main-nav{
     background-color:#dbd8d3 !important;
+    padding-left:0 !important;
+}
+
+.nav-name{
+    margin-left:0 !important;
+}
+
+.nav-container{
+    margin-left:2.3% !important;
 }
