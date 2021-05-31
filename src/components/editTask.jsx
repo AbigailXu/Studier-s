@@ -67,7 +67,7 @@ class EditTask extends Form {
           {/* {this.renderInput("due", "Due date")} */}
           {this.renderDatepicker("due", "Due date")}
           {this.renderDropdown("priority", "Priority", priorities)}
-          {this.renderSubmitBtn(`${addOrEdit} Movie`)}
+          {this.renderSubmitBtn(`${addOrEdit} Task`)}
         </form>
       </Fragment>
       //renderInput(name, lable, placeholder, isAutoFocus=false, type="text")
