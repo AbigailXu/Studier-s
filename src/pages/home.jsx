@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import { Link } from 'react-router-dom';
 import BG1 from "../images/background1.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import area3 from "../images/3.png";
 import "../styles/common.css";
 import "../styles/cover.css";
 
@@ -11,12 +9,6 @@ class Home extends Component {
   render() {
     return (
       <div>
-        {/* <img
-          onClick={() => window.open("https://github.com/AbigailXu/Studier-s")}
-          className="area3"
-          src={area3}
-          alt="background"
-        /> */}
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
           <div className="bg-container">
             <img className="bg" src={BG1} alt="background" />
