@@ -1,22 +1,49 @@
 .cover-container{
+    top: 0;
     padding: 0 !important;
+    /* position:;  */
+  /* align-items: flex-start; */
 } 
 
+.cover-container-1-2{
+    /* position:initial;  */
+    top: 0;
+    display:block;
+}
+
 .cover-s1{
-    padding: 25% 0 25% 0;
-    position: relative; 
+    padding: 36vh 0 30vh 12vw;
+    position:absolute; 
+    z-index: 2;
+    letter-spacing:0.2rem;
     /* height: 10rem; */
     vertical-align: middle;
     text-align: center;
 }
 
+.start{
+    margin-top: 12vh;
+    font-size: 2rem;
+    background-color: transparent !important;
+    border-color: #3988b6;
+    color: #3988b6;
+}
+
+.start:hover{
+    font-size: 2.01rem;
+    background-color: #3988b6 !important;
+    border-color: #3988b6 !important;
+    color: white;
+    box-shadow:none;
+}
+
 .cover-s2{
-    background-color: #A8A294;
-    color: aliceblue;
+    background-color: #C8D8E3;
+    color: white;
     position: relative; 
     /* height: 10rem; */
     vertical-align: middle;
-    padding:  20% 0 25% 0;
+    padding: 30vh 60vw 30vh 6vw;
     text-align: center;
 }
 
@@ -28,18 +55,59 @@
     position: relative; 
     /* height: 10rem; */
     vertical-align: middle;
-    padding:  25% 0 25% 0;
+    padding:  20% 0 20% 0;
     margin:0;
     text-align: center;
 }
 
 .cover-footer{
-    background-color: #686358;
+    background-color: #1E3656;
     color: aliceblue;
     position: relative; 
     height: 2rem;
     vertical-align: middle;
-    padding:  2% 0 5% 0;
+    padding:  1% 0 3% 0;
     margin:0;
     text-align: center;
 }
+
+.bg{
+    width: 100%;
+    padding-top: 5%;
+}
+.bg-container{
+    /* position: fixed !important; 
+    bottom: 0 !important; */
+    position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+    z-index: 1;
+
+}
+
+.media-icon{
+    font-size: 6rem;
+}
+
+.media-containers{
+    display: flex;
+    justify-content: center;
+  }
+  .media-container-1{
+    margin: 0 10vw;
+    color: #83bbe0;
+  }
+  .media-container-1:hover{
+    color: #6692af;
+    cursor: pointer;	
+  }
+  
+  .media-container-2{
+    margin: 0 10vw;
+    color: #9fb7c7;
+  }
+  .media-container-2:hover{
+    color: #72838f;
+    cursor: pointer;	
+  }

@@ -28,8 +28,12 @@
 }
 
 .main-nav{
-    background-color:#dbd8d3 !important;
+    background-color:rgb(255,255,255, 0.4) !important;
     padding-left:0 !important;
+    position: fixed ; 
+    top: 0 ;
+    z-index: 3;
+    width: 100%;
 }
 
 .nav-name{

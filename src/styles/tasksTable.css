@@ -31,11 +31,11 @@
 }
 
 .taskTitle{
-  color: #DC3545;
+  color: #2e77a5;
 }
 
 .taskTitle:hover{
-  color: black;
+  color: #418bec;
   text-decoration: none;
 }
 
