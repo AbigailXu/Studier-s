@@ -10,5 +10,7 @@
     * User login system
     * Implement 3rd party music API
 * Backend: https://github.com/AbigailXu/Studier-s-backend
+[Studier-s.pdf](https://github.com/AbigailXu/Studier-s/files/6613812/Studier-s.pdf)
+
 
 # Deployment: https://studier-s.netlify.app
